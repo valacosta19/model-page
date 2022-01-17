@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './components/Navbar'
+import { Principal } from './sections/Principal';
+import { Services } from './sections/Services';
+import { About } from './sections/About';
+import { Contact } from './sections/Contact';
+import { Footer } from './sections/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex flex-col gap-24'>
+      <Navbar />
+      <Principal />
+      <Services />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }
