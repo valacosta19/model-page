@@ -3,9 +3,9 @@ import Typography from '../components/Typography'
 
 export const About = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center mt-24 mb-12'>
       <Typography variant='h2' title='About us' />
-      <div className='grid grid-cols-1 m-8 gap-8'>
+      <div className='grid grid-cols-1 m-8 gap-8 md:grid-cols-2'>
         <div><img src={require('../assets/about-us-image.jpeg')} alt='ja construction owner installing gutters' /></div>
         <div>
           <Typography variant='h3' title='Ullamco dolor amet minim aliqua.' />

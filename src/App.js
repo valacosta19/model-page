@@ -8,7 +8,7 @@ import { Footer } from './sections/Footer';
 
 const App = () => {
   return (
-    <div className='flex flex-col gap-24'>
+    <div className='flex flex-col'>
       <Navbar />
       <Principal />
       <Services />

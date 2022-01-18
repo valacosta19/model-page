@@ -9,7 +9,7 @@ export const Card = ({props}) => {
   }
 
   return (
-    <div key={props.id} className='max-w-xs bg-slate-500 rounded shadow-lg shadow-slate-400/50'>
+    <div key={props.id} className='max-w-xs bg-white rounded shadow-lg shadow-darkblue/50'>
       <div>
         <img src={imageLink()} alt={props.alt} className='rounded' />
       </div>
