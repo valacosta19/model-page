@@ -14,7 +14,7 @@ module.exports = {
         green: "#63C132"
       },
       backgroundImage: {
-        'principal-image': "url('/src/assets/gutter-and-sky.jpeg')"
+        'principal-image': "url('/src/assets/gutters-green-and-blue.jpg')"
       },
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',

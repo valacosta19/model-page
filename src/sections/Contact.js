@@ -8,7 +8,7 @@ export const Contact = () => {
     <div className='flex flex-col gap-8' id='contact'>
       <div className='m-4'>
         <div className='grid grid-cols-1 gap-6 md:grid-cols-[1fr_2fr] items-center'>
-          <Typography variant='h2' title='Contact us' className="text-center" />
+          <Typography variant='h2' title='Contact us' className="text-center uppercase text-3xl font-bold text-darkblue" />
           <ContactForm className="text-center" />
         </div>
         <Typography variant='p' title="" />

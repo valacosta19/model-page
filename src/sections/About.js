@@ -3,8 +3,8 @@ import Typography from '../components/Typography'
 
 export const About = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-24 mb-12'>
-      <Typography variant='h2' title='About us' />
+    <div id='about' className='flex flex-col justify-center items-center mt-12 mb-12 py-12 bg-[#f2f2f2]'>
+      <Typography variant='h2' title='About us' className='uppercase text-3xl font-bold text-darkblue' />
       <div className='grid grid-cols-1 m-8 gap-8 md:grid-cols-2'>
         <div><img src={require('../assets/about-us-image.jpeg')} alt='ja construction owner installing gutters' /></div>
         <div>

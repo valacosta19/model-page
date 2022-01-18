@@ -30,12 +30,15 @@ export const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <div className={`fixed w-full bg-white ${isOpen ? 'h-100' : 'h-0' }`}>
-      <div className='flex justify-between items-center bg-white border-b-2 border-darkblue px-5 p-3 z-50'>
+    <div className={`fixed w-full border-b-2 border-darkblue`}>
+      <div className={`flex justify-between items-center bg-white/80 border-b-2 border-darkblue px-5 p-3 z-50 lg:hidden`}>
         <img src={Logo} alt='logo' className='max-w-[100px]' />
-        <Hamburger toggled={isOpen} toggle={setOpen} />
+        <div className='lg:hidden'>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
       </div>
-      <ul className={`flex flex-col justify-evenly items-center ${isOpen ? 'translate-x-0' : 'translate-x-full' } transition duration-300 z-50`}>
+      <ul className={`flex flex-col justify-evenly items-center bg-white ${isOpen ? 'translate-x-0 h-100' : 'translate-x-full h-0' } transition duration-300 z-50 lg:flex-row lg:py-3 lg:px-12`}>
+        <img src={Logo} alt='logo' className='max-w-[100px] hidden lg:block' />
         {navlinks.map(link => 
           <Link
             key={link.id}

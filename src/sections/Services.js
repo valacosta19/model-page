@@ -42,8 +42,8 @@ const serviceList = [
 
 export const Services = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-8'>
-      <Typography variant='h2' title='Services' />
+    <div id="services" className='flex flex-col justify-center items-center mt-24 gap-8'>
+      <Typography variant='h2' title='Services' className='uppercase text-3xl font-bold text-darkblue' />
       <div className='flex gap-4 flex-wrap justify-evenly'>
         { serviceList.map(service => {
           return <Card key={service.id} props={service} />
