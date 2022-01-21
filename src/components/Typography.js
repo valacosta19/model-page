@@ -7,9 +7,9 @@ const VariantType = ({ variant, title, className }) => {
     case 'h2':
       return <h2 className={className}>{title}</h2>
     case 'h3':
-      return <h3 className='uppercase text-2xl font-bold'>{title}</h3>
+      return <h3 className={`uppercase text-2xl font-bold ${className}`}>{title}</h3>
     case 'p':
-      return <p className='text-base'>{title}</p>
+      return <p className={`text-base ${className}`}>{title}</p>
     default:
       break;
   }
@@ -17,9 +17,7 @@ const VariantType = ({ variant, title, className }) => {
 
 const Typography = ({variant, title, className}) => {
   return (
-    <div>
-      <VariantType variant={variant} title={title} className={className} />
-    </div>
+    <VariantType variant={variant} title={title} className={className} />
   )
 }
 

@@ -58,7 +58,7 @@ export function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <Button children='Submit' type="submit" disabled={state.submitting} className='bg-green rounded py-2 px-3 w-full m-auto text-white font-bold cursor-pointer transition-all ease-in-out delay-150 hover:bg-gradient-to-r from-lightblue to-green hover:gradient-x md:w-1/4' />
+      <Button children='Submit' type="submit" disabled={state.submitting} className='bg-green rounded py-2 px-3 w-full m-auto text-white font-bold cursor-pointer transition-all ease-in-out hover:text-xl hover:bg-gradient-to-r from-lightblue to-green hover:gradient-x md:w-1/4' />
     </form>
   );
 }

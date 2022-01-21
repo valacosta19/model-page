@@ -1,21 +1,36 @@
 import './App.css';
-import { Navbar } from './components/Navbar'
+import { ResponsiveAppBar } from './components/Navbar/Navbar'
 import { Principal } from './sections/Principal';
 import { Services } from './sections/Services';
 import { About } from './sections/About';
 import { Contact } from './sections/Contact';
 import { Footer } from './sections/Footer';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { WhatsappButton } from './components/WhatsappButton/WhatsappButton';
+
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#00A8FF",
+      dark: "#001043",
+    },
+    secondary: {
+      main: "#63C132",
+    },
+  }
+})
 
 const App = () => {
   return (
-    <div className='flex flex-col'>
-      <Navbar />
+    <ThemeProvider theme={theme}>
+      <ResponsiveAppBar />
+      <WhatsappButton />
       <Principal />
       <Services />
       <About />
       <Contact />
       <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 
