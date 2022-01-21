@@ -108,9 +108,11 @@ export const ResponsiveAppBar = () => {
              }} 
             >
               {navlinks.map((link) => (
-                <MenuItem key={link.id} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{link.name}</Typography>
-                </MenuItem>
+                <Link href={link.url} className="text-darkblue no-underline">
+                  <MenuItem key={link.id} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{link.name}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
