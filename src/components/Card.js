@@ -14,10 +14,10 @@ export const Card = ({props}) => {
         <img src={imageLink()} alt={props.alt} className='rounded' />
       </div>
 
-      <div className='p-3'>
+      <div className='p-5'>
         <Typography variant='h3' title={props.title} />
 
-        <Typography variant='p' title={props.content} />
+        <Typography variant='p' title={props.content} className='mt-4' />
       </div>
     </div>
   )

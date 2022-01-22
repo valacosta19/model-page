@@ -20,11 +20,11 @@ export const Contact = () => {
             <div className="flex flex-col items-center gap-4">
               <Link href="tel:4077798641" className="flex gap-4 hover:text-green" sx={{ color: theme.palette.primary.dark, textDecoration: 'none', '&:hover': { color: theme.palette.secondary.main, fontWeight: 500 } }}>
                 <PhoneIcon />
-                <p>Give us a call!</p>
+                <p>Give us a call! <br/> (407) 779 8641</p>
               </Link>
               <Link href="https://www.instagram.com/jabrothersconstruction/" className="flex gap-4 hover:text-green" sx={{ color: theme.palette.primary.dark, textDecoration: 'none', '&:hover': { color: theme.palette.secondary.main, fontWeight: 500 } }}>
                 <InstagramIcon />
-                <p>Follow us on Instagram</p>
+                <p>Follow us on Instagram <br/> @jabrothersconstruction</p>
               </Link>
             </div>
           </div>
