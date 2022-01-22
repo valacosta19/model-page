@@ -8,7 +8,7 @@ export function ContactForm() {
     return <p>Thank you for contact us. We'll be in touch as soon as posible!</p>;
   }
   return (
-    <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
+    <form onSubmit={handleSubmit} className='flex flex-col gap-4 mb-4'>
       <div className='flex flex-col justify-between gap-4'>
         <label htmlFor='name' className='flex flex-col w-full'>
           Name
