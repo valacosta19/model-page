@@ -20,7 +20,7 @@ const serviceList = [
   {
     id: 3,
     title: "Replacement",
-    img: 'gutter-installation.jpeg',
+    img: 'replacement-gutters.jpeg',
     content: "If you commonly see rain gutters leaking, sagging, overflowing, and pooling runoff around the home is a good idea to replace them. Consider a replacement if your gutters are showing significant exterior color fade, if they are installed with spike and ferrule or if they are more than 10 years old. Save time and money and get a replacement with us and the best gutters in the market.",
     alt: ""
   },

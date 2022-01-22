@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp -R page $DEPLOYPATH
+    - export DEPLOYPATH=/home/saturnation/build/
+    - /bin/cp -R build/ $DEPLOYPATH
