@@ -9,7 +9,7 @@ export const About = () => {
         <div className='m-auto'><img className='max-h-[43rem]' src={require('../assets/about-us-image.jpeg')} alt='ja construction owner installing gutters' /></div>
         <div>
           <Typography variant='h3' title='We live here, we work here!' />
-          <Typography variant='p' className='mt-4 text-lg' title='JA Brothers Construction is a family-owned entrepreneurship servicing Winter Haven and all Central Florida.' />
+          <Typography variant='p' className='mt-4 text-lg' title='JA Brothers Construction is a family-owned entrepreneurship servicing Davenport and all Central Florida.' />
           <Typography variant='p' className='mt-4 text-lg' title='We live here, we work here!' />
           <Typography variant='p' className='mt-4 text-lg' title='We are committed to the customer satisfaction and exceptional quality services for all of your gutter needs. Our team performs everything from standard gutter repair, maintenance, cleanings, and complete gutter installations for both residential as well as commercial properties.' />
           <Typography variant='p' className='mt-4 text-lg' title='Honesty, Efficiency, and Quality Matter to Us' />
