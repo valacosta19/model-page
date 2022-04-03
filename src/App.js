@@ -7,6 +7,7 @@ import { Contact } from './sections/Contact';
 import { Footer } from './sections/Footer';
 import { ThemeProvider, StyledEngineProvider, createTheme, adaptV4Theme } from '@mui/material/styles';
 import { WhatsappButton } from './components/WhatsappButton/WhatsappButton';
+import { Helmet } from 'react-helmet'
 
 export const theme = createTheme(adaptV4Theme({
   palette: {
@@ -24,6 +25,13 @@ const App = () => {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
+        <Helmet>
+          <title>JA Brothers construction LLC. Install, repair, raplace and clean your gutters</title>
+          <meta
+            name="description"
+            content="JA Brothers Construction is a family-owned entrepreneurship servicing Davenport and all Central Florida. Our main services are the installation, repair, replace and cleaning of seamless gutters"
+          />
+        </Helmet>
         <ResponsiveAppBar />
         <WhatsappButton />
         <Principal />
